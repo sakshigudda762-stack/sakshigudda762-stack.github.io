@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sakshi Gudda – Java Developer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f6fa; --surface:#ffffff; --ink:#142038; --muted:#56627a;
+  --line:#d8deea; --accent:#2b59e0; --accent-ink:#ffffff;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1626; --surface:#18213a; --ink:#eef1f8; --muted:#a2adc4;
+    --line:#2a3555; --accent:#7ea1ff; --accent-ink:#0f1626; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1626; --surface:#18213a; --ink:#eef1f8; --muted:#a2adc4;
+  --line:#2a3555; --accent:#7ea1ff; --accent-ink:#0f1626; color-scheme:dark;
+}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:24px 0;gap:16px;flex-wrap:wrap}
+.logo{font-weight:800;text-decoration:none;font-size:1.1rem}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:64px 0 56px}
+.hero h1{font-size:clamp(2.4rem,8vw,5rem);line-height:1.02;letter-spacing:-.03em;font-weight:800;margin:0 0 24px;max-width:15ch}
+.hero p{font-size:1.2rem;color:var(--muted);max-width:56ch;margin:0 0 32px}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none;margin:0 10px 10px 0;border:2px solid var(--accent)}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--line)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:1.9rem;letter-spacing:-.02em;margin:0 0 28px}
+.projects{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.card h3{margin:0;font-size:1.25rem}
+.card .when{color:var(--muted);font-size:.9rem}
+.card p,.card li{color:var(--muted);font-size:.97rem}
+.card p{margin:0}
+.card ul{margin:0;padding-left:18px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px}
+.tags span{font-size:.82rem;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--ink)}
+.stack{display:grid;gap:20px}
+.job{display:grid;gap:4px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0;padding-bottom:0}
+.job h3{margin:0;font-size:1.15rem}
+.job .when{color:var(--muted);font-size:.92rem}
+.job ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
+.skillgrid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.skillgrid h3{margin:0 0 10px;font-size:1rem}
+.skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.skills li{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 14px}
+.certs{margin:0;padding-left:18px;color:var(--muted)}
+.certs li{margin-bottom:6px}
+.contact p{color:var(--muted);max-width:56ch}
+.links{display:flex;flex-wrap:wrap;margin-top:20px}
+footer{padding:32px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="#top">Sakshi Gudda</a>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <h1>Java developer in the making.</h1>
+      <p>I’m Sakshi Naganath Gudda, a final-year Electronics &amp; Telecommunication Engineering student from Solapur. I build Java applications with OOP and MySQL, and I’m looking for an entry-level Software Engineer or Java Developer role.</p>
+      <a class="btn" href="#projects">See my projects</a>
+      <a class="btn alt" href="#contact">Get in touch</a>
+      <a class="btn alt" href="Sakshi_Gudda_Resume.pdf" download>Download resume</a>
+    </div>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="card">
+          <h3>AI-Based Student Recruitment &amp; Assessment Platform</h3>
+          <div class="when">Aug 2026 – Present</div>
+          <p>A platform that analyses resumes for relevant skills and generates performance reports for recruiters. It includes technical and aptitude assessments, with detection of suspicious test behaviour.</p>
+          <div class="tags"><span>Java</span><span>MongoDB</span></div>
+        </article>
+        <article class="card">
+          <h3>ATM Management System</h3>
+          <div class="when">Jan 2026</div>
+          <p>A console-based application with login and PIN validation, balance enquiry, deposit, withdrawal, and transaction handling. Account operations are structured with object-oriented principles.</p>
+          <div class="tags"><span>Java</span><span>MySQL</span></div>
+        </article>
+        <article class="card">
+          <h3>Contact Management System</h3>
+          <div class="when">Feb 2026</div>
+          <p>A Java application to store, search, update, and delete contact records, with structured input handling built on object-oriented design.</p>
+          <div class="tags"><span>Java</span><span>MySQL</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card stack">
+        <div class="job">
+          <h3>Java Development Intern, ShadowFox (Virtual)</h3>
+          <div class="when">Feb 2026</div>
+          <ul>
+            <li>Completed a one-month virtual internship in Java development.</li>
+            <li>Delivered projects including an Enhanced Calculator and a Contact Management System.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>RPG Foundation Employability Skill Development Program, Zensar</h3>
+          <div class="when">Jan 2026</div>
+          <ul>
+            <li>Completed structured training in Java and SQL.</li>
+            <li>Developed an ATM Management System as a practical project.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skillgrid">
+        <div><h3>Programming</h3><ul class="skills"><li>Java</li><li>C</li><li>C++</li><li>SQL</li></ul></div>
+        <div><h3>Web development</h3><ul class="skills"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
+        <div><h3>Core concepts</h3><ul class="skills"><li>OOP</li><li>Data Structures &amp; Algorithms</li></ul></div>
+        <div><h3>Databases</h3><ul class="skills"><li>MySQL</li><li>MongoDB</li></ul></div>
+        <div><h3>Tools</h3><ul class="skills"><li>Eclipse</li><li>VS Code</li><li>GitHub</li></ul></div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card stack">
+        <div class="job">
+          <h3>B.Tech, Electronics &amp; Telecommunication Engineering</h3>
+          <div class="when">N K Orchid College of Engineering &amp; Technology, Solapur · 2027 · CGPA 7.0</div>
+        </div>
+        <div class="job">
+          <h3>Higher Secondary Certificate (HSC)</h3>
+          <div class="when">Hindustani Convent Church Highschool &amp; Jr College · 2023</div>
+        </div>
+        <div class="job">
+          <h3>Secondary School Certificate (SSC)</h3>
+          <div class="when">Sevasadan Junior College, Solapur · 2021</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications and events</h2>
+      <ul class="certs">
+        <li>Introduction to Cyber Security, Infosys</li>
+        <li>International Symposium on Robotics and AI (attendee)</li>
+        <li>Orchathon 2025, Unstop (participant)</li>
+        <li>Hack-AI-thon 2025–26 Edition, GDG On Campus, NKOCET (participant)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>I’m open to entry-level Software Engineer and Java or Backend Developer roles. Send me an email or call me.</p>
+      <div class="links">
+        <a class="btn" href="mailto:sakshigudda762@gmail.com">Email me</a>
+        <a class="btn alt" href="Sakshi_Gudda_Resume.pdf" download>Download resume</a>
+        <a class="btn alt" href="tel:+919226940309">Call +91 92269 40309</a>
+        <!-- Replace the LinkedIn link below with your real profile URL -->
+        <a class="btn alt" href="https://github.com/sakshigudda762-stack">GitHub</a>
+        <a class="btn alt" href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Sakshi Naganath Gudda · Solapur, Maharashtra</footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
